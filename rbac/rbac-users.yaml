@@ -1,0 +1,138 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: user1-role
+  namespace: user1
+rules:
+- apiGroups: [""]
+  resources: ["pods", "services", "configmaps", "secrets", "persistentvolumeclaims"]
+  verbs: ["get", "list", "watch", "create", "delete", "update", "patch"]
+- apiGroups: ["apps"]
+  resources: ["deployments", "statefulsets", "daemonsets", "replicasets"]
+  verbs: ["*"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: user1-binding
+  namespace: user1
+subjects:
+  - kind: ServiceAccount
+    name: user1-sa
+    namespace: user1
+roleRef:
+  kind: Role
+  name: user1-role
+  apiGroup: rbac.authorization.k8s.io
+---
+# user2
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: user2-role
+  namespace: user2
+rules:
+- apiGroups: [""]
+  resources: ["pods", "services", "configmaps", "secrets", "persistentvolumeclaims"]
+  verbs: ["get", "list", "watch", "create", "delete", "update", "patch"]
+- apiGroups: ["apps"]
+  resources: ["deployments", "statefulsets", "daemonsets", "replicasets"]
+  verbs: ["*"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: user2-binding
+  namespace: user2
+subjects:
+  - kind: ServiceAccount
+    name: user2-sa
+    namespace: user2
+roleRef:
+  kind: Role
+  name: user2-role
+  apiGroup: rbac.authorization.k8s.io
+---
+# user3
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: user3-role
+  namespace: user3
+rules:
+- apiGroups: [""]
+  resources: ["pods", "services", "configmaps", "secrets", "persistentvolumeclaims"]
+  verbs: ["get", "list", "watch", "create", "delete", "update", "patch"]
+- apiGroups: ["apps"]
+  resources: ["deployments", "statefulsets", "daemonsets", "replicasets"]
+  verbs: ["*"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: user3-binding
+  namespace: user3
+subjects:
+  - kind: ServiceAccount
+    name: user3-sa
+    namespace: user3
+roleRef:
+  kind: Role
+  name: user3-role
+  apiGroup: rbac.authorization.k8s.io
+---
+# user4
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: user4-role
+  namespace: user4
+rules:
+- apiGroups: [""]
+  resources: ["pods", "services", "configmaps", "secrets", "persistentvolumeclaims"]
+  verbs: ["get", "list", "watch", "create", "delete", "update", "patch"]
+- apiGroups: ["apps"]
+  resources: ["deployments", "statefulsets", "daemonsets", "replicasets"]
+  verbs: ["*"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: user4-binding
+  namespace: user4
+subjects:
+  - kind: ServiceAccount
+    name: user4-sa
+    namespace: user4
+roleRef:
+  kind: Role
+  name: user4-role
+  apiGroup: rbac.authorization.k8s.io
+---
+# user5
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: user5-role
+  namespace: user5
+rules:
+- apiGroups: [""]
+  resources: ["pods", "services", "configmaps", "secrets", "persistentvolumeclaims"]
+  verbs: ["get", "list", "watch", "create", "delete", "update", "patch"]
+- apiGroups: ["apps"]
+  resources: ["deployments", "statefulsets", "daemonsets", "replicasets"]
+  verbs: ["*"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: user5-binding
+  namespace: user5
+subjects:
+  - kind: ServiceAccount
+    name: user5-sa
+    namespace: user5
+roleRef:
+  kind: Role
+  name: user5-role
+  apiGroup: rbac.authorization.k8s.io
