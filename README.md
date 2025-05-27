@@ -30,3 +30,10 @@ Amazon EKS（Elastic Kubernetes Service）を使った Kubernetes の基本操�
 - namespaces/：Namespace の活用
 - rbac/：RBAC を用いたアクセス制御
 - secrets/：Secrets の管理と利用
+
+## 🔗 Reference
+- [Amazon EKS 公式ドキュメント](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html)
+- [Kubernetes 公式ドキュメント](https://kubernetes.io/ja/docs/home/)
+
+![AWS](https://img.shields.io/badge/AWS-EKS-orange)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-1.29-blue)
