@@ -36,4 +36,4 @@ Amazon EKS（Elastic Kubernetes Service）を使った Kubernetes の基本操�
 - [Kubernetes 公式ドキュメント](https://kubernetes.io/ja/docs/home/)
 
 ![AWS](https://img.shields.io/badge/AWS-EKS-orange)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-1.29-blue)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-1.33-blue)
