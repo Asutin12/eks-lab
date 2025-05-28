@@ -2,8 +2,6 @@
 
 Amazon EKS（Elastic Kubernetes Service）を使った Kubernetes の基本操作を学ぶためのハンズオン教材です。Pod、Service、RBAC、Secrets など、実践的なリソース管理を体験できます。
 
----
-
 ## 📝 Overview
 
 このリポジトリでは、以下の内容を学習できます：
@@ -13,16 +11,15 @@ Amazon EKS（Elastic Kubernetes Service）を使った Kubernetes の基本操�
 - RBAC を用いたアクセス制御
 - Secrets を使った機密情報の管理
 
----
-
 ## ✅ Precondition
 
 - AWS アカウント
-- AWS CLI のインストールと設定
+- AWS CLI のインストールと設定 or CloudShell の設定
 - kubectl のインストール
 - eksctl のインストール（EKS クラスターの作成に使用）
 
 ## 📁 Directory structure
+
 - chapter-01/：Pod の作成と基本操作
 - chapter-02/：ReplicaSet によるスケーリング
 - chapter-03/：Service（NodePort）による外部公開
@@ -32,6 +29,7 @@ Amazon EKS（Elastic Kubernetes Service）を使った Kubernetes の基本操�
 - secrets/：Secrets の管理と利用
 
 ## 🔗 Reference
+
 - [Amazon EKS 公式ドキュメント](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html)
 - [Kubernetes 公式ドキュメント](https://kubernetes.io/ja/docs/home/)
 
