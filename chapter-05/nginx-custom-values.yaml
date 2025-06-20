@@ -1,0 +1,6 @@
+replicaCount: 2
+service:
+  type: NodePort
+  # NodePort を指定する場合、ポート番号も指定できる (省略するとランダム)
+  # nodePorts:
+  #   http: 30080
